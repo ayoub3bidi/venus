@@ -1,7 +1,7 @@
-# Janus
+# Venus
 
 <p align="center">
-    <img src="./static/img/janus.png" alt="Janus Logo"/> <br/>
+    <img src="./static/img/venus.png" alt="Venus Logo"/> <br/>
     A modern documentation website boilerplate powered by Docusaurus and Tailwind CSS
 </p>
 
@@ -12,7 +12,7 @@
 
 ## 🚀 Overview
 
-Janus is a powerful documentation website boilerplate that combines the robust features of Docusaurus with the utility-first approach of Tailwind CSS. It's designed to help you create beautiful, functional, and multilingual documentation websites with minimal setup.
+Venus is a powerful documentation website boilerplate that combines the robust features of Docusaurus with the utility-first approach of Tailwind CSS. It's designed to help you create beautiful, functional, and multilingual documentation websites with minimal setup.
 
 ## ✨ Features
 
@@ -27,8 +27,8 @@ Janus is a powerful documentation website boilerplate that combines the robust f
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ayoub3bidi/janus.git
-cd janus
+git clone https://github.com/ayoub3bidi/venus.git
+cd venus
 ```
 
 2. Install dependencies:
@@ -69,7 +69,7 @@ All commands are run from the root of the project:
 
 ## 🌐 Internationalization
 
-Janus comes with built-in support for multiple languages. To add translations:
+Venus comes with built-in support for multiple languages. To add translations:
 
 1. Wrap your text in `<Translate>` tags
 2. Generate translation files using the translation command

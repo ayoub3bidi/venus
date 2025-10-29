@@ -10,12 +10,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Janus',
+  title: 'Venus',
   tagline: 'Stylish documentation',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://janus-docs.vercel.app',
+  url: 'https://venus-docs.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -23,7 +23,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ayoub3bidi', // Usually your GitHub org/user name.
-  projectName: 'janus', // Usually your repo name.
+  projectName: 'venus', // Usually your repo name.
 
   plugins: [
     [
@@ -81,7 +81,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ayoub3bidi/janus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ayoub3bidi/venus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -92,7 +92,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ayoub3bidi/janus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ayoub3bidi/venus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -111,9 +111,9 @@ const config = {
       // Replace with your project's social card
       image: './static/img/social_card.jpg',
       navbar: {
-        title: 'Janus',
+        title: 'Venus',
         logo: {
-          alt: 'Janus Logo',
+          alt: 'Venus Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -125,7 +125,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/ayoub3bidi/janus',
+            href: 'https://github.com/ayoub3bidi/venus',
             label: 'Give us a Star on GitHub',
             position: 'right',
           },
@@ -139,7 +139,7 @@ const config = {
         style: 'dark',
         links: [
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Janus, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Venus, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

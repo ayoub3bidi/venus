@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "Janus",
+    "message": "Venus",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "Janus Logo",
+    "message": "Venus Logo",
     "description": "The alt text of navbar logo"
   },
   "item.label.Tutorial": {
