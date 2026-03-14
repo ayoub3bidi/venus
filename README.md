@@ -51,7 +51,7 @@ All commands are run from the root of the project:
 |---------|------------|
 | `pnpm install` | Installs project dependencies |
 | `pnpm start` | Starts development server at `localhost:3000` |
-| `pnpm build` | Builds production site to `./dist/` |
+| `pnpm build` | Builds production site to `./build/` |
 | `pnpm serve` | Previews production build locally |
 
 ### Translation Commands

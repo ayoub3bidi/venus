@@ -1,14 +1,16 @@
-ARG NODE_VERSION=18-alpine3.15
-ARG NGINX_VERSION=1.15
+ARG NODE_VERSION=20-alpine3.19
+ARG NGINX_VERSION=1.27-alpine
 
 # Stage build
 FROM node:${NODE_VERSION} AS website_builder
 
 RUN npm i -g pnpm
 
-WORKDIR /comwork-website
+WORKDIR /venus
 
 COPY . .
+
+ENV CI=true
 
 RUN pnpm i && \
     pnpm run build
@@ -20,7 +22,7 @@ COPY .docker/nginx/default.conf /etc/nginx/conf.d/default.conf
 
 COPY .docker/nginx/docker-entrypoint.sh /docker-entrypoint.sh
 
-COPY --from=website_builder /comwork-website/build/ /usr/share/nginx/html
+COPY --from=website_builder /venus/build/ /usr/share/nginx/html
 
 RUN chmod +x /docker-entrypoint.sh && \
     chmod -R 755 /usr/share/nginx/html && \

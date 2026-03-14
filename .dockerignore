@@ -1,1 +1,13 @@
 .git
+.gitignore
+node_modules
+build
+.docusaurus
+.cache
+.env*
+*.log
+*.md
+!README.md
+.DS_Store
+*.tgz
+.pnpm-store
