@@ -1,4 +1,4 @@
-ARG NODE_VERSION=20-alpine3.19
+ARG NODE_VERSION=22-alpine3.23
 ARG NGINX_VERSION=1.27-alpine
 
 # Stage build
@@ -8,12 +8,15 @@ RUN npm i -g pnpm
 
 WORKDIR /venus
 
-COPY . .
+COPY package.json pnpm-lock.yaml ./
 
 ENV CI=true
 
-RUN pnpm i && \
-    pnpm run build
+RUN pnpm install --frozen-lockfile
+
+COPY . .
+
+RUN pnpm run build
 
 # Stage run
 FROM nginx:${NGINX_VERSION} AS doc

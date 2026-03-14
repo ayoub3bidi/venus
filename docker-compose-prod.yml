@@ -1,0 +1,8 @@
+version: '3.3'
+
+services:
+  website_ui:
+    restart: always
+    image: ${CI_REGISTRY}/${IMAGE_NAME}:${VERSION}
+    ports:
+      - "80:80"

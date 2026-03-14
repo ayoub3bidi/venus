@@ -106,8 +106,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: './static/img/social_card.jpg',
+      // Social card for Open Graph / Twitter (uses logo; replace with img/social_card.jpg for custom)
+      image: 'img/logo.svg',
       navbar: {
         title: 'Venus',
         logo: {
