@@ -1,40 +1,41 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* Tailwind v4 - single import replaces the three @tailwind directives. */
+@import "tailwindcss";
 
- @tailwind base;
- @tailwind components;
- @tailwind utilities; 
+/* Tell Tailwind to sync with Docusaurus dark mode attribute. */
+@custom-variant dark (&:is([data-theme="dark"] *));
+
+/* Theme tokens - replaces tailwind.config.js theme.extend. */
+@theme {
+  /* Add custom colors, fonts, etc. here if needed. */
+}
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #008080;          /* Base teal */
-  --ifm-color-primary-dark: #007373;     /* 10% darker */
-  --ifm-color-primary-darker: #006666;   /* 20% darker */
-  --ifm-color-primary-darkest: #004d4d;  /* 40% darker */
-  --ifm-color-primary-light: #009999;    /* 10% lighter */
-  --ifm-color-primary-lighter: #00b3b3;  /* 20% lighter */
-  --ifm-color-primary-lightest: #00cccc; /* 40% lighter */
+  --ifm-color-primary: #008080;
+  --ifm-color-primary-dark: #007373;
+  --ifm-color-primary-darker: #006666;
+  --ifm-color-primary-darkest: #004d4d;
+  --ifm-color-primary-light: #009999;
+  --ifm-color-primary-lighter: #00b3b3;
+  --ifm-color-primary-lightest: #00cccc;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] {
   --ifm-color-primary: #00b3b3;
-  --ifm-color-primary-dark: #009999;     
-  --ifm-color-primary-darker: #008080;   
-  --ifm-color-primary-darkest: #006666;  
-  --ifm-color-primary-light: #00cccc;    
-  --ifm-color-primary-lighter: #00e6e6;  
-  --ifm-color-primary-lightest: #00ffff; 
+  --ifm-color-primary-dark: #009999;
+  --ifm-color-primary-darker: #008080;
+  --ifm-color-primary-darkest: #006666;
+  --ifm-color-primary-light: #00cccc;
+  --ifm-color-primary-lighter: #00e6e6;
+  --ifm-color-primary-lightest: #00ffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  padding: 10px; /* Add padding to create some space around the content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
