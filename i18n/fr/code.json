@@ -2,14 +2,14 @@
   "Get Started": {
     "message": "Commencer"
   },
-  "Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.": {
-    "message": "Docusaurus a été conçu pour être facilement installé et utilisé afin de mettre votre site web en ligne rapidement."
+  "Start with docs, blog, search, translations, and responsive pages already wired together.": {
+    "message": "Commencez avec la documentation, le blog, la recherche, les traductions et les pages responsives déjà configurés."
   },
-  "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the docs directory.": {
-    "message": "Docusaurus vous permet de vous concentrer sur votre documentation pendant que nous nous occupons des tâches. Allez-y et déplacez vos documents dans le répertoire docs."
+  "Extend the React pages, adjust the theme tokens, and keep project content in Markdown or MDX.": {
+    "message": "Etendez les pages React, ajustez les jetons de theme et gardez le contenu du projet en Markdown ou MDX."
   },
-  "Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.": {
-    "message": "Étendez ou personnalisez la mise en page de votre site web en réutilisant React. Docusaurus peut être étendu tout en réutilisant le même en-tête et pied de page."
+  "Build static files for any host or serve the production image with the included Nginx setup.": {
+    "message": "Generez des fichiers statiques pour n'importe quel hebergeur ou servez l'image de production avec la configuration Nginx incluse."
   },
   "theme.ErrorPageContent.title": {
     "message": "Cette page a planté.",

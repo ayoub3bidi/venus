@@ -1,19 +1,9 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+documentation:
+  label: Documentation
+  permalink: /documentation
+  description: Documentation updates and examples
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+boilerplate:
+  label: Boilerplate
+  permalink: /boilerplate
+  description: Starter content for Venus projects

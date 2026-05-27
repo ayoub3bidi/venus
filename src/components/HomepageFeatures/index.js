@@ -5,32 +5,29 @@ import Translate from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Ship Documentation',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <Translate>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Start with docs, blog, search, translations, and responsive pages already wired together.
       </Translate>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Customize The Stack',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <Translate>
-        Docusaurus lets you focus on your docs, and we'll do the chores. Go
-        ahead and move your docs into the docs directory.
+        Extend the React pages, adjust the theme tokens, and keep project content in Markdown or MDX.
       </Translate>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Publish Anywhere',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <Translate>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Build static files for any host or serve the production image with the included Nginx setup.
       </Translate>
     ),
   },
