@@ -33,7 +33,9 @@ const config: Config = {
     },
   },
 
-  plugins: [
+  plugins: ['./src/plugins/tailwind.cjs'],
+
+  themes: [
     [
       '@easyops-cn/docusaurus-search-local',
       {
@@ -47,7 +49,6 @@ const config: Config = {
         removeDefaultStemmer: true,
       },
     ],
-    './src/plugins/tailwind.cjs',
   ],
 
   presets: [
