@@ -1,0 +1,66 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "schedule": ["before 6am on monday"],
+  "timezone": "Africa/Tunis",
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "description": "Group all Docusaurus packages into one PR - they must all move together",
+      "matchPackagePrefixes": ["@docusaurus/"],
+      "matchPackageNames": ["docusaurus"],
+      "groupName": "Docusaurus",
+      "groupSlug": "docusaurus"
+    },
+    {
+      "description": "Group Tailwind and its PostCSS plugin - they are versioned in lockstep",
+      "matchPackageNames": ["tailwindcss", "@tailwindcss/postcss"],
+      "groupName": "Tailwind CSS",
+      "groupSlug": "tailwindcss"
+    },
+    {
+      "description": "Group all React packages - React 19 + react-dom must match",
+      "matchPackageNames": ["react", "react-dom"],
+      "groupName": "React",
+      "groupSlug": "react"
+    },
+    {
+      "description": "Automerge patch-level updates for non-breaking devDependencies",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "description": "Require manual review for any major bump - breaking changes likely",
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["dependencies", "major-upgrade"]
+    },
+    {
+      "description": "Pin Docker base image digests for reproducible builds",
+      "matchManagers": ["dockerfile"],
+      "pinDigests": true
+    },
+    {
+      "description": "Keep Node.js Docker image updates grouped and manual",
+      "matchManagers": ["dockerfile"],
+      "matchPackageNames": ["node"],
+      "groupName": "Node.js Docker image",
+      "automerge": false
+    },
+    {
+      "description": "Group GitHub Actions updates",
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions",
+      "groupSlug": "github-actions",
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ],
+  "ignoreDeps": [],
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2
+}
