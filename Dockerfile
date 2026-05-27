@@ -4,11 +4,11 @@ ARG NGINX_VERSION=1.27-alpine
 # Stage build
 FROM node:${NODE_VERSION} AS website_builder
 
-RUN npm i -g pnpm
+RUN npm i -g pnpm@10.24.0
 
 WORKDIR /venus
 
-COPY package.json pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 ENV CI=true
 

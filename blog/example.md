@@ -1,6 +1,7 @@
 ---
 slug: welcome
 title: Welcome to Venus
+date: 2026-05-27
 authors: [author]
 tags: [documentation, boilerplate]
 ---
