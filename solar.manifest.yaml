@@ -25,6 +25,8 @@ rewrites:
         to: "https://github.com/ayoub3bidi/{{.project_name}}"
       - from: "ayoub3bidi/venus/tree/main/"
         to: "ayoub3bidi/{{.project_name}}/tree/main/"
+      - from: "venus-docs.vercel.app"
+        to: "{{.project_name}}-docs.vercel.app"
   - file: README.md
     replacements:
       - from: "# Venus"
