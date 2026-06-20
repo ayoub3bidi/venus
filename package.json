@@ -44,6 +44,11 @@
       "last 5 safari version"
     ]
   },
+  "pnpm": {
+    "overrides": {
+      "shell-quote@>=1.1.0 <1.8.4": ">=1.8.4"
+    }
+  },
   "engines": {
     "node": ">=20.0"
   }
