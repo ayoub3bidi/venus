@@ -101,7 +101,9 @@ pnpm audit --audit-level=critical
 
 ## Known Caveats
 
-- `README.md` references `./static/img/venus.png`, but the current tracked static images list does not include that file. Verify assets before relying on that README image.
+- `README.md` references `./static/img/venus.png`, but the README now uses `logo.svg`.
+- `src/plugins/local-search.cjs` holds the search theme config; `solar.manifest.yaml` removes it when search is disabled via `sun`.
+- Post-scaffold `editUrl` paths are rewritten by `solar.manifest.yaml` when using `sun create`.
 - The repository has no dedicated test suite or source linter at the moment; `pnpm build` is the primary validation command.
 - Generated folders such as `node_modules/`, `build/`, and `.docusaurus/` are ignored and should not be committed.
 

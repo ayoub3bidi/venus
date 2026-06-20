@@ -1,7 +1,7 @@
 # Venus
 
 <p align="center">
-    <img src="./static/img/venus.png" alt="Venus Logo"/> <br/>
+    <img src="./static/img/logo.svg" alt="Venus Logo" width="120"/> <br/>
     A modern documentation website boilerplate powered by Docusaurus and Tailwind CSS
 </p>
 
@@ -9,6 +9,8 @@
     <img src="https://img.shields.io/badge/Built%20With-Docusaurus-green" alt="Built With Docusaurus"/>
     <img src="https://img.shields.io/badge/Styled%20With-Tailwind-blue" alt="Styled With Tailwind"/>
 </p>
+
+> **Solar Stack** — scaffold a customized copy with one command: see [docs/SOLAR_STACK.md](./docs/SOLAR_STACK.md)
 
 ## Overview
 

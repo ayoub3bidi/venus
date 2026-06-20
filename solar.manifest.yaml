@@ -1,0 +1,70 @@
+id: venus
+repo: https://github.com/ayoub3bidi/venus
+default_ref: v1.1.2
+variables:
+  - name: project_name
+  - name: site_title
+rewrites:
+  - file: package.json
+    replacements:
+      - from: '"venus"'
+        to: '"{{.project_name}}"'
+  - file: docusaurus.config.ts
+    replacements:
+      - from: "title: 'Venus'"
+        to: "title: '{{.site_title}}'"
+      - from: "projectName: 'venus'"
+        to: "projectName: '{{.project_name}}'"
+      - from: "title: 'Venus'"
+        to: "title: '{{.site_title}}'"
+      - from: "Venus Logo"
+        to: "{{.site_title}} Logo"
+      - from: "Venus, Inc."
+        to: "{{.site_title}}"
+      - from: "https://github.com/ayoub3bidi/venus"
+        to: "https://github.com/ayoub3bidi/{{.project_name}}"
+      - from: "ayoub3bidi/venus/tree/main/"
+        to: "ayoub3bidi/{{.project_name}}/tree/main/"
+  - file: README.md
+    replacements:
+      - from: "# Venus"
+        to: "# {{.site_title}}"
+      - from: "Venus is"
+        to: "{{.site_title}} is"
+  - file: .github/workflows/build.yml
+    replacements:
+      - from: "ayoub3bidi/venus:latest"
+        to: "ayoub3bidi/{{.project_name}}:latest"
+  - file: blog/authors.yml
+    replacements:
+      - from: "Venus Maintainer"
+        to: "{{.site_title}} Maintainer"
+  - file: blog/tags.yml
+    replacements:
+      - from: "Venus projects"
+        to: "{{.site_title}} projects"
+features:
+  - name: i18n
+    default: true
+    remove_paths:
+      - i18n/fr
+    remove_lines:
+      - file: docusaurus.config.ts
+        pattern: "localeDropdown"
+      - file: docusaurus.config.ts
+        pattern: "'fr'"
+      - file: docusaurus.config.ts
+        pattern: "Français"
+      - file: docusaurus.config.ts
+        pattern: ", 'fr'"
+      - file: src/plugins/local-search.cjs
+        pattern: ", 'fr'"
+  - name: search
+    default: true
+    remove_paths:
+      - src/plugins/local-search.cjs
+    remove_lines:
+      - file: docusaurus.config.ts
+        pattern: "themes: [require"
+      - file: package.json
+        pattern: "docusaurus-search-local"
